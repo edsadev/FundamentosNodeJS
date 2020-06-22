@@ -19,6 +19,7 @@ function adios(nombre, otroCallback) {
   }, 1000);
 }
 
+// Función recursiva
 function conversacion(nombre, veces, callback){
   if (veces > 0) {
     hablar(() => {
