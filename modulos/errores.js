@@ -20,12 +20,13 @@ function seRompeAsync(cb) {
 
 try {
   seRompeAsync((err) => {
-    console.log(err.message)
+    console.log(`El error capturado es: "${err.message}"`)
   })
   // otraFuncion()
   // serompe()
 } catch(err) {
   console.error('Vaya, algo se ha roto... ' + err)
+  console.log('Pero no pasa nada, lo hemos capturado')
 }
 
 console.log('Esto de aquí esta al final')
