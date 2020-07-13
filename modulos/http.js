@@ -8,7 +8,8 @@ function router(request, response) {
 
   switch (request.url){
     case '/hola':
-      response.write('Hola, que tal?')
+      let saludo = hola()
+      response.write(saludo)
       response.end()
       break
     default:
@@ -22,6 +23,10 @@ function router(request, response) {
   // response.write('Hola, ya se usar HTTP de NodeJs')
 
   // response.end()
+}
+
+function hola() {
+  return 'Hola, que tal?'
 }
 
 
